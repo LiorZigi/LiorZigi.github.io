@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ng-simon-assignment": {
+      "hosting": {
+        "Simon-assignment": [
+          "ng-simon-assignment"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ng-simon-assignment"
+  }
+}

@@ -1,0 +1,163 @@
+<section fxLayout="row">
+  <mat-card
+    *ngIf="
+      appComp.productsForm.controls['lessThan500'].hasError('required') &&
+      appComp.productsForm.controls['greaterThan1000'].hasError('required') &&
+      appComp.productsForm.controls['oneStar'].hasError('required') &&
+      appComp.productsForm.controls['twoStars'].hasError('required') &&
+      appComp.productsForm.controls['fourStars'].hasError('required') &&
+      appComp.productsForm.controls['fiveStars'].hasError('required')
+    "
+    class="iphones"
+    fxLayout="row "
+    fxLayoutAlign="space-around center"
+  >
+    <mat-card-header>
+      <mat-card-title>iPhone 13 Pro</mat-card-title>
+      <mat-card-subtitle>Apple</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="iPro"
+      mat-card-image
+      src="assets/iphone13.jpg"
+      alt="iPhone 13 Pro"
+    />
+    <mat-card-content>
+      <h4>Raiting:</h4>
+      <p fxLayout="row">
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </p>
+      <p>from 999$</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="addItem('items/5Xik3XcyUKx4ci3tMJ2a')">
+        Add to Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card
+    *ngIf="
+      appComp.productsForm.controls['lessThan500'].hasError('required') &&
+      appComp.productsForm.controls['oneStar'].hasError('required') &&
+      appComp.productsForm.controls['twoStars'].hasError('required') &&
+      appComp.productsForm.controls['threeStars'].hasError('required') &&
+      appComp.productsForm.controls['fiveStars'].hasError('required')
+    "
+    class="iphones"
+    fxLayout="row "
+    fxLayoutAlign="space-around center"
+  >
+    <mat-card-header>
+      <mat-card-title>iPhone 13 Pro Max</mat-card-title>
+      <mat-card-subtitle>Apple</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="iPro-Max"
+      mat-card-image
+      src="assets/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_09142021_inline.jpg.small_2x.jpg"
+      alt="iPhone 13 Pro Max"
+    />
+    <mat-card-content>
+      <h4>Raiting:</h4>
+      <p fxLayout="row">
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </p>
+      <p>from 1099$</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="addItem('items/fsDKLPEnI2fj3er9B5jP')">
+        Add to Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>
+
+<section fxLayout="row">
+  <mat-card
+    *ngIf="
+      appComp.productsForm.controls['lessThan500'].hasError('required') &&
+      appComp.productsForm.controls['greaterThan1000'].hasError('required') &&
+      appComp.productsForm.controls['oneStar'].hasError('required') &&
+      appComp.productsForm.controls['threeStars'].hasError('required') &&
+      appComp.productsForm.controls['fourStars'].hasError('required') &&
+      appComp.productsForm.controls['fiveStars'].hasError('required')
+    "
+    class="iphones"
+    fxLayout="row "
+    fxLayoutAlign="space-around center"
+  >
+    <mat-card-header>
+      <mat-card-title>iPhone 13 Pro</mat-card-title>
+      <mat-card-subtitle>Apple</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="iPro-graphite"
+      mat-card-image
+      src="assets/tg_image_568130425.jpeg"
+      alt="iPhone 13 Pro"
+    />
+    <mat-card-content>
+      <h4>Raiting:</h4>
+      <p fxLayout="row">
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </p>
+      <p>from 999$</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="addItem('items/MHAi62bP0hyftTd1isi8')">
+        Add to Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+  <mat-card
+    *ngIf="
+      appComp.productsForm.controls['lessThan500'].hasError('required') &&
+      appComp.productsForm.controls['oneStar'].hasError('required') &&
+      appComp.productsForm.controls['twoStars'].hasError('required') &&
+      appComp.productsForm.controls['fourStars'].hasError('required') &&
+      appComp.productsForm.controls['threeStars'].hasError('required')
+    "
+    class="iphones"
+    fxLayout="row "
+    fxLayoutAlign="space-around center"
+  >
+    <mat-card-header>
+      <mat-card-title>iPhone 13 Pro Max</mat-card-title>
+      <mat-card-subtitle>Apple</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="iPro-Max-graphite"
+      mat-card-image
+      src="assets/tg_image_1261489130.jpeg"
+      alt="iPhone 13 Pro Max"
+    />
+    <mat-card-content>
+      <h4>Raiting:</h4>
+      <p fxLayout="row">
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </p>
+      <p>from 1099$</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-raised-button
+        color
+        (click)="addItem('items/NMCYxVDCdxe5VzQQ8ASR')"
+      >
+        Add to Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>
