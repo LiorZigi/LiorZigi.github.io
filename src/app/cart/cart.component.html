@@ -1,0 +1,21 @@
+<mat-card class="example-card">
+  <mat-card-title>Your Cart</mat-card-title>
+
+  <mat-card-content>
+    <p class="product-list" *ngFor="let product of productList">
+      {{ product.name }}
+      <span style="margin: 30px">{{ product.price }}$</span>
+
+      <button (click)="removeItem(product)" class="cancel-button">
+        <mat-icon>cancel</mat-icon>
+      </button>
+    </p>
+    <p *ngIf="productList">
+      ________________________ <br />
+      Total price: {{ cartItems.totalPrice }}$
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button>Proceed to checkout</button>
+  </mat-card-actions>
+</mat-card>

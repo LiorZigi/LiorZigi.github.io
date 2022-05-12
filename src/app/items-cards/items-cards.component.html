@@ -1,0 +1,34 @@
+<section fxLayout="column" fxLayoutAlign="start">
+  <mat-card
+    class="iphones"
+    *ngFor="let product of products"
+    fxLayoutAlign="space-around center"
+  >
+    <mat-card-header>
+      <mat-card-title>{{ product.name }}</mat-card-title>
+      <mat-card-subtitle>Apple</mat-card-subtitle>
+    </mat-card-header>
+    <img
+      class="iPro"
+      mat-card-image
+      src="{{ product.img }}"
+      alt="iPhone 13 Pro"
+    />
+    <mat-card-content>
+      <h4>Raiting:</h4>
+      <ng-container
+        *ngFor="let product of products.constructor(product.rating)"
+      >
+        <p fxFlex="row">
+          <mat-icon>star</mat-icon>
+        </p>
+      </ng-container>
+      <p>from {{ product.price }}$</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="addItem('items/' + product.id)">
+        Add to Cart
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</section>

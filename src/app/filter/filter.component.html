@@ -1,0 +1,30 @@
+<section class="example-section" [formGroup]="filter.productsForm">
+  <h3>Filters</h3>
+  <h4>Price</h4>
+  <p>
+    <mat-checkbox formControlName="greaterThan500"> > 500$ </mat-checkbox>
+  </p>
+  <p>
+    <mat-checkbox formControlName="lessThan500"> < 500$ </mat-checkbox>
+  </p>
+  <p>
+    <mat-checkbox formControlName="greaterThan1000"> > 1000$ </mat-checkbox>
+  </p>
+
+  <h4>Rating</h4>
+  <p>
+    <mat-checkbox formControlName="oneStar">1</mat-checkbox>
+  </p>
+  <p>
+    <mat-checkbox formControlName="twoStars">2</mat-checkbox>
+  </p>
+  <p>
+    <mat-checkbox formControlName="threeStars">3</mat-checkbox>
+  </p>
+  <p>
+    <mat-checkbox formControlName="fourStars">4</mat-checkbox>
+  </p>
+  <p>
+    <mat-checkbox formControlName="fiveStars">5</mat-checkbox>
+  </p>
+</section>
